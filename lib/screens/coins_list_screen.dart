@@ -47,8 +47,8 @@ class _CoinsListScreenState extends State<CoinsListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Crypto Wallet'),
-        centerTitle: true,
+        title: const Text('AIO Crypto'),
+        centerTitle: false,
       ),
       body: Consumer<CoinProvider>(
         builder: (context, provider, _) {

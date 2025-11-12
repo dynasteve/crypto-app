@@ -47,7 +47,7 @@ class _CoinDetailScreenState extends State<CoinDetailScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.coin.name),
+        title: Text("${widget.coin.name} Price History"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),

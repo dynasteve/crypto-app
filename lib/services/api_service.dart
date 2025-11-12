@@ -11,12 +11,12 @@ class ApiService {
 
   // Fetch coins
   Future<List<Coin>> fetchCoins({int perPage = 50, int page = 1}) async {
-    final uri = Uri.parse(
+    final uri1 = Uri.parse(
       '$baseUrl/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=$perPage&page=$page&sparkline=false&price_change_percentage=24h'
     );
 
-    final response = await http.get(uri, headers: {
-      'x_cg_demo_api_key': apiKey, // if using a key
+    final response = await http.get(uri1, headers: {
+      'x_cg_demo_api_key': apiKey,
     });
 
     if (response.statusCode == 200) {
